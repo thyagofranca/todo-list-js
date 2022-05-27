@@ -122,3 +122,48 @@ html, body {
     color: #fff;
     padding-bottom: 20px;
 }
+@media only screen and (max-width: 991px) {
+    #primary #main .add-new-task {
+        width: 100%;
+        min-width: 400px;
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #primary #main .add-new-task .btn-send {
+        margin-left: 0;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    #primary #main #content {
+        width: 100%;
+        min-width: 400px;
+        max-width: 400px;
+    }
+    #primary #main #content .task .card {
+        width: 100%;
+        min-width: 340px;
+        max-width: 340px;
+        line-height: 25px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #primary #main .add-new-task {
+        width: 100%;
+        min-width: 330px;
+        max-width: 330px;
+    }
+    #primary #main #content {
+        width: 100%;
+        min-width: 330px;
+        max-width: 330px;
+    }
+    #primary #main #content .task .card {
+        width: 100%;
+        min-width: 270px;
+        max-width: 270px;
+        line-height: 25px;
+    }
+}
