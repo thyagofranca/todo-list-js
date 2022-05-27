@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+  	box-sizing: border-box;
+    border: none;
+    list-style: none;
+}
+html, body {
+	height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+#primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 100px;
+	background-image: linear-gradient(150deg, #43e087 30%, #23c7ff 55%, #2aad1a 90%);
+}
+#primary #main header {
+    text-align: center;
+    padding-top: 50px;
+}
+#primary #main header .title {
+    color: #fafafa;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px 0;
+}
+#primary #main .add-new-task {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    min-width: 600px;
+    background-color: #fff;
+}
+#primary #main .add-new-task input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #727272;
+    background-color: transparent;
+}
+#primary #main .add-new-task input[type="text"]:focus-visible {
+    outline-color: #43b8e0;
+}
+#primary #main .task input[type="checkbox"]:checked + .card { /* risca o card */
+    text-decoration: line-through;
+}
+#primary #main .add-new-task ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #727272;
+    font-size: 17px;
+}
+#primary #main .add-new-task ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #727272;
+    font-size: 17px;
+}
+#primary #main .add-new-task .btn-send {
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #1cb7e6;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#primary #main #content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#primary #main #content .task {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#primary #main #content .task .card {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px 25px;
+}
+#primary #main .task .trash {
+    font-size: 17px;
+    color: #ff0000;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Font Awesome 5 Free";
+}
+#rodape {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 2%;
+    background-image: linear-gradient(150deg, #3c6dc4 30%, #113474 55%, #031639 90%);
+}
+#rodape .socials ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rodape .socials ul li {
+    margin: 0 10px;
+    padding: 20px 0;
+}
+#rodape .socials ul li a i {
+    font-size: 1.5em;
+    color: #fff;
+}
+#rodape .copyright .desc {
+    font-size: 1em;
+    color: #fff;
+    padding-bottom: 20px;
+}
